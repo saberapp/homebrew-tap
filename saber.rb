@@ -10,7 +10,7 @@ class Saber < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/saberapp/cli/releases/download/v0.1.4/saber_0.1.4_darwin_amd64.tar.gz"
-      sha256 "cabeb492c3b4395f078ece088abe3ee446af0cb63eeb952c18ae15a3085e8b76"
+      sha256 "fa85445d063851ab8192c81290f38c98cad62a8eac0ed6fda3d196cf050fdef6"
 
       define_method(:install) do
         bin.install "saber"
@@ -18,7 +18,7 @@ class Saber < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/saberapp/cli/releases/download/v0.1.4/saber_0.1.4_darwin_arm64.tar.gz"
-      sha256 "7291dc06338a78f6fd1aeabfc77cd008c831d5b0e980f22334e50e2147600b07"
+      sha256 "ee5ef3ddb9334343909c6fb8b8714da5fdd78f8995d2ec737e8797272691ea81"
 
       define_method(:install) do
         bin.install "saber"
@@ -29,14 +29,14 @@ class Saber < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/saberapp/cli/releases/download/v0.1.4/saber_0.1.4_linux_amd64.tar.gz"
-      sha256 "e528d8e04dd53ea01fa588c11402818ca9694801d3f449826d67dd102bce96c6"
+      sha256 "449773b1f3d53deb7e8dc28d3e56638c82a196a1dbc1659aba342dbdab426163"
       define_method(:install) do
         bin.install "saber"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/saberapp/cli/releases/download/v0.1.4/saber_0.1.4_linux_arm64.tar.gz"
-      sha256 "7f48ec0ac78ac368f2c69feec3ebcfc156433b16855fe7526921107e90bdbcee"
+      sha256 "661018d14ca9732a736ad737efe192e1b8be7c34a07bc220c57e2fc03099cba5"
       define_method(:install) do
         bin.install "saber"
       end
