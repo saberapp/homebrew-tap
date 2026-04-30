@@ -5,20 +5,20 @@
 class Saber < Formula
   desc "Run Saber signal research from your terminal"
   homepage "https://saber.app"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saberapp/cli/releases/download/v0.1.7/saber_0.1.7_darwin_amd64.tar.gz"
-      sha256 "5844a7dc0f11514110199fbf909957ec61a78948f91bc574d7d2c4fa1051f886"
+      url "https://github.com/saberapp/cli/releases/download/v0.1.8/saber_0.1.8_darwin_amd64.tar.gz"
+      sha256 "18b8cca3af4549681529b6a2ac51ae7273b915b823d218d741ad0ba8bcb464af"
 
       define_method(:install) do
         bin.install "saber"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saberapp/cli/releases/download/v0.1.7/saber_0.1.7_darwin_arm64.tar.gz"
-      sha256 "2d13bcf99e7627836cbeff3ceae7c9e820c0e24ea51da9b77b4b4df8d3968ccc"
+      url "https://github.com/saberapp/cli/releases/download/v0.1.8/saber_0.1.8_darwin_arm64.tar.gz"
+      sha256 "115dde606519fab145a37c7a0f045fed546b34cb04085e98479b3a493a9ba1ca"
 
       define_method(:install) do
         bin.install "saber"
@@ -28,15 +28,15 @@ class Saber < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saberapp/cli/releases/download/v0.1.7/saber_0.1.7_linux_amd64.tar.gz"
-      sha256 "8983313c1e571ccb5bff75dd782f3b235f44d5845aaae65264a7017111da2d61"
+      url "https://github.com/saberapp/cli/releases/download/v0.1.8/saber_0.1.8_linux_amd64.tar.gz"
+      sha256 "349d2ce6331a347b66d453ed5fb5e9a755678003ef830d2f596dcd1e46156be1"
       define_method(:install) do
         bin.install "saber"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saberapp/cli/releases/download/v0.1.7/saber_0.1.7_linux_arm64.tar.gz"
-      sha256 "a7b28743000aba31201c803b522bca5268a0181fac9b0ede59d74826bd669575"
+      url "https://github.com/saberapp/cli/releases/download/v0.1.8/saber_0.1.8_linux_arm64.tar.gz"
+      sha256 "4b7a0c53210e1c278ae0f1adf3b7e9d302bf60e22259fd635d8cc6c3a9bd9338"
       define_method(:install) do
         bin.install "saber"
       end
